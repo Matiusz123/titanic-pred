@@ -18,8 +18,6 @@ all_data = pd.concat([train, test])
 
 te = test[['PassengerId']]
 
-print(train.columns)
-
 numerical = train[["Age", "SibSp", "Parch", "Fare"]]
 categorical = train[["Survived", "Pclass", "Sex", "Ticket", "Cabin", "Embarked"]]
 
